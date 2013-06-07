@@ -4,6 +4,8 @@
 
 
 //INSPIRED FROM  https://github.com/airportyh/trampoline.js/blob/master/6_add_exception.html
+importScript("../../jquery.js");
+importScript("../../../js/aUtil.js");
 
 var Thread;
 
@@ -85,9 +87,13 @@ var Thread;
 	Thread.isRunning = [];
 
 	function showWorking(){
+		var l = $(".loading");
+		l.show();
 	}//function
 
 	function hideWorking(){
+		var l = $(".loading");
+		l.hide();
 	}//function
 
 
